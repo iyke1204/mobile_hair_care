@@ -5,12 +5,22 @@ html {
     /* background-color: #EAE7DC; */
     /* background-color: #5680E9; */
     /* background-color: #84CEEB; */
-    /* background-color: #5AB9EA; */
+    background-color: #5AB9EA;
     /* background-color: #8860D0; */
 }
 
 /* Body */
 
+
+/* General */
+h1,
+h2,
+h3,
+p {
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    color: #EAE7DC;
+}
 
 /* Navigation */
 
