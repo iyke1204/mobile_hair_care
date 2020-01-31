@@ -1,0 +1,33 @@
+{
+  "name": "mobile_hair_care",
+  "version": "1.0.0",
+  "description": "Mobile Care App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node project/start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iyke1204/mobile_hair_care.git"
+  },
+  "keywords": [
+    "mobile",
+    "hair",
+    "care",
+    "ai"
+  ],
+  "author": "Jude",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iyke1204/mobile_hair_care/issues"
+  },
+  "homepage": "https://github.com/iyke1204/mobile_hair_care#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "12.14.0"
+  }
+}
