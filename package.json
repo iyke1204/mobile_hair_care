@@ -23,7 +23,9 @@
     "url": "https://github.com/iyke1204/mobile_hair_care/issues"
   },
   "homepage": "https://github.com/iyke1204/mobile_hair_care#readme",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "engines": {
     "node": "12.14.0"
   }
