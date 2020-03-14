@@ -1,4 +1,7 @@
 
+
+// Initialize Firebase
+
 const handleSignIn = () => {
     var provider = new firebase.auth.GoogleAuthProvider();
 
@@ -21,18 +24,18 @@ const handleSignIn = () => {
       });      
 }
 
+console.log(firebaseApiKey)
+// let element = document.getElementById("first-button");
 
-let element = document.getElementById("first-button");
+// function turnButtonRed (){
+//     element.style.backgroundColor = "red";
+//     element.style.color = "white";
+//     element.innerHTML = "Red Button"; 
+// }
 
-function turnButtonRed (){
-    element.style.backgroundColor = "red";
-    element.style.color = "white";
-    element.innerHTML = "Red Button"; 
-}
+// element.onclick = turnButtonRed;
 
-element.onclick = turnButtonRed;
-
-console.log("Hello!", element)
+// console.log("Hello!", element)
 /*element.addEventListener('click', (event) => {
             event.target.style.background = 'pink';    
 })*/

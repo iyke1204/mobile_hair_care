@@ -4,7 +4,7 @@
   "description": "Mobile Care App",
   "main": "index.js",
   "scripts": {
-    "start": "node project/start.js",
+    "start": "nodemon project/start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,9 +24,18 @@
   },
   "homepage": "https://github.com/iyke1204/mobile_hair_care#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "@hapi/joi": "^17.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.4"
   },
   "engines": {
     "node": "12.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
