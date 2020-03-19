@@ -1,95 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-        <link href="./css/index.css" type="text/css" rel="stylesheet">
-    </head>
-    <body>
-        <header id="header">
-            <nav>
-                <ul>
-                    <li class="logo"><img alt="Total Care" src="./images/Shot 2020-01-27 at 2.58.59 pm.png" style="width:82px"></li>
-                    <li>About</li>
-                    <span>
-                        <button>Become a Total Care Pro</button>
-                        <button><a href="/signup">Personalise Your Hairstyle</a></button>
-                    </span>
-                </ul>
-            </nav>
-            <main class="above-the-fold">
-                <div id="atf-left">
-                    <h1>Take the Guess Work Out of Looking Good</h1>
-                    <p>Pick the right hairstyle. Find a great stylist. Look your best</p>
-                    <div id="search">
-                        <form action="" method="GET">
-                            <input name="email" type="email" placeholder="Enter Your Address Here..." class="text" required="required">
-                            <input type="submit" value="Find a Stylist or Barber">
-                        </form>
-                      <!--<button id="first-button" class="cta-main">Start Looking Great</button>-->  
-                    </div>
-                    
-                </div>
-                <img id="atf-image" alt="Man getting a haircut at home from a female stylist" src="./images/224618-P1BLK0-185.jpg" style="width:550px">
-                   <!--<video width="425" class="header-image"  autoplay muted loop><source src="./videos/vertical-demo.mp4" type="video/mp4"> Your browser does not support the video tag</video class="header-image">--> 
-                <div id="atf-right">
-                    
-                </div>
-            </main>
-            
-        </header>
-         <!-- Button to open the modal -->
-        
-        <div id="problem" class="below-the-fold">
-            <div>
-                <h2>Tired of Having to Guess the Right Style for You?</h2>
-            </div>
-            <div>
-                <img id="problem-image" alt="picture of lady with bad hair" src="./images/gettyimages-520953789-1024x1024.jpg" style="width:700px">
-                <p>
-
-                </p>
-            </div>
-            
-            <button class="cta-main">Start Looking Great</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/grid.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-nav">
+        <nav class="left-nav">
+          <ul>
+            <li class="logo">
+              <a href="/"
+                ><img
+                  src="../resources/images/Screen Shot 2020-01-27 at 2.58.59 pm.png"
+                  alt="Total Care"
+                  style="width:82px"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="middle">
+          <ul>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <nav class="right-nav">
+          <ul>
+            <li><a href="#" class="btn">Become a Total Care Pro</a></li>
+            <li>
+              <a href="/signup" class="btn">Personalise Your Hairstyle</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="above-the-fold">
+        <div class="left-atf">
+          <div class="transformation">
+            <h1>Take the Guess Work Out of Looking Good</h1>
+            <p>
+              Pick the right hairstyle. Find a great stylist or Barber. Look
+              your best
+            </p>
+            <form action="" method="GET">
+              <input
+                name="email"
+                type="email"
+                placeholder="Enter Your Address Here..."
+                class="text"
+                required="required"
+              />
+              <input type="submit" value="Find a Pro" />
+            </form>
+          </div>
         </div>
-        <div id="success" class="below-the-fold">
-            <h2>Now You Can Always Look Your Best</h2>
-            <button class="cta-main">Start Looking Great</button>
+        <div class="right-atf">
+          <img
+            src="../resources/images/224618-P1BLK0-185.jpg"
+            alt="Man getting haircut at home"
+            style="width: 530px;"
+          />
         </div>
-        <div id="guide" class="below-the-fold">
-            <h2>Introducing the Worlds First Advanced Hairstyling AI</h2>
-            <button class="cta-main">Start Looking Great</button>
+      </main>
+      <div class="problem">
+        <div class="problem-header">
+          <h2>
+            Tired of not being able to find the right stylist/barber for you?
+          </h2>
         </div>
-        <div id="how-it-works" class="below-the-fold">
-            <div>
-                <h2>How It Works</h2>
-            </div>
-           <div class="steps">
-                <div class="">
-                    <img>
-                    <h3>Choose the right hairstyle</h3>
-                </div>
-                <div>
-                    <img>
-                    <h3>Choose the right hairstyle</h3>
-                </div>
-                <div>
-                    <img>
-                    <h3>Choose the right hairstyle</h3>
-                </div>
-           </div>
-           <div>
-                <button class="cta-main">Start Looking Great</button>
-           </div>
+        <div class="problem-column-3">
+          <div class="a">
+            <h3>Problem 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+              iure minima eligendi alias pariatur fugit omnis ad earum explicabo
+              est quae, nisi, reiciendis consectetur ullam debitis officia, eaque
+              reprehenderit error.
+            </p>
+          </div>
+          <div class="b">
+            <h3>Problem 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+              iure minima eligendi alias pariatur fugit omnis ad earum explicabo
+              est quae, nisi, reiciendis consectetur ullam debitis officia, eaque
+              reprehenderit error.
+            </p>
+          </div>
+          <div class="c">
+            <h3>Problem 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+              iure minima eligendi alias pariatur fugit omnis ad earum explicabo
+              est quae, nisi, reiciendis consectetur ullam debitis officia, eaque
+              reprehenderit error.
+            </p>
         </div>
-        <footer>
-            <ul>
-                <li> Junk Drawer</li>
-            </ul>
-        </footer>
-    </body>
-
+      </div>
+    </div>
+  </body>
 </html>

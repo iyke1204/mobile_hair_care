@@ -1,14 +1,11 @@
-/* Html */
 html {
-    background-color: #FFFFFF;
+  background: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Body */
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
+  display: grid;
+  width: 100%;
 }
 
 /* General */
@@ -16,324 +13,168 @@ h1,
 h2,
 h3,
 p {
-    font-family: Helvetica, sans-serif;
-    text-align: left;
-    color: #000000;
+  font-family: Helvetica, sans-serif;
+  text-align: left;
+  color: #000000;
 }
 
 h1 {
-    font-size: 64px;
+  font-size: 64px;
 }
 
-h2{
-    text-align: center;
-    margin-top: 100px;
+h2 {
+  font-size: 42px;
 }
 
 h3 {
-    text-align: center;
+  text-align: center;
+  font-size: 32px;
 }
 
-p {
-    font-size: 36px;
+.container {
+  display: grid;
+  width: 100%;
 }
+
 /* Navigation */
-
-/* Header */
-header {
-    /* background-color: #A5DCE4; */
-    /*background-color: #B0DDC2; */
-    /* background-color: #F8C296; */
-   /* background-color: #D9D7FF;*/
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 990px;
+.main-nav {
+  display: grid;
+  /* min-width: 1600px; */
+  min-width: auto;
+  max-width: 100%;
+  grid-template-rows: 100px;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
 }
 
-nav {
-    margin: 0px auto;
-    /*padding-top: 10px;*/
-    width: 100%;
-    height: 100px;
+.main-nav .btn {
+  color: #181e34;
+  background-color: #ffffff;
+  /*color: #FFFFFF;*/
+  /*background-color: #1F0600;*/
+  font-size: 20px;
+  font-weight: 700;
+  padding: 6% 30px;
+  border-radius: 5px;
+  /* width: 100%; */
+  margin: 0 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav li {
-    display: inline-block;
-    margin: 0 30px; 
+  display: inline-block;
 }
 
-.logo {
-    margin: 0 50px 0 20px;
+.main-nav nav.left-nav {
+  grid-column: 1 / 2;
 }
 
-nav span {
-    position: absolute;
-    right: 50px; 
+.main-nav nav.middle {
+  grid-column: 3 / 5;
 }
 
-nav span button {
-    color: #181E34;
-    background-color: #FFFFFF;
-    /*color: #FFFFFF;*/
-    /*background-color: #1F0600;*/
-    font-size: 20px;
-    font-weight: 700;
-    padding: 20px 30px;
-    border-radius: 5px;
-    width: 320px;
+.main-nav nav.right-nav {
+  grid-column: 8 / 13;
+  background: #181e34;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin: 0;
 }
 
+/* Above the fold */
 .above-the-fold {
-   display: inline-block;
+  /* background: #181E34; */
+  display: grid;
+  min-width: auto;
+  max-width: 100%;
+  height: 880px;
+  grid-template-columns: repeat(12, 1fr);
 }
 
-#atf-left {
-    position: absolute;
-    top: 400px;
-    left: 80px;
-    width: 40%;
+.left-atf {
+  grid-column: 2 / 6;
 }
 
-#atf-right {
-        position: absolute;
-        left: 0px;
-        top: -87px;
-        right: 0px;
-        bottom: 0px;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#181E34), to(#181E34));
-        background-image: linear-gradient(180deg, 
-        #181E34,
-        #181E34);
-        -webkit-transform: translate(60%, 0px);
-        -ms-transform: translate(60%, 0px);
-        transform: translate(60%, 0px);
-        z-index: -100;
-    
-    /*width: 50%;
-    height: 100%;
-    background-color: #181E34;*/
+.right-atf {
+  background: #181e34;
+  grid-column: 8 / 13;
 }
 
-#atf-image {
-    z-index: 100;
-    position: absolute;
-    right: 400px;
-    box-shadow: 7px 7px 50px 0 rgba(0, 0, 0, 0.25);;
+.right-atf img {
+  z-index: 100;
+  position: absolute;
+  right: 25%;
+  top: 150px;
+  box-shadow: 7px 7px 50px 0 rgba(0, 0, 0, 0.25);
 }
 
-.header-image {
-    position: absolute;
-    top: 80px;
-    right: 200px;
-    z-index: -10;
+/* Above the fold Message */
+.transformation {
+  margin-top: 250px;
+}
+
+.transformation h1 {
+  color: #181e34;
+}
+
+.transformation p {
+  font-size: 36px;
+  color: #181e34;
 }
 
 #search form,
 button {
-    display: inline-block;
+  display: inline-block;
 }
- 
+
 input[type="email"] {
-    min-height: 70px;
-    min-width: 400px;
-    border-radius: 5px;
-    border:1px solid #cccccc;
-    font-size: 24px;
+  min-height: 70px;
+  min-width: 455px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-size: 24px;
 }
 
 input[type="submit"] {
-    color: #FFFFFF;
-    background-color: #181E34;
-    font-size: 24px;
-    padding: 20px 30px;
-    border-radius: 5px;
+  color: #ffffff;
+  background-color: #181e34;
+  font-size: 24px;
+  padding: 20px 30px;
+  border-radius: 5px;
 }
+
 /* Problem */
-/* #problem {
-    
-} */
-
-#problem-image {
-    border-radius: 40% 50%;
-}
-
-/* How It Works */
-
-.steps {
-    display: block;
-    margin: 40px auto;
-    width: 90%;
-    height: 70%;
-    
-    border: 1px solid black;
-}
-
-.steps div {
-    /*display: inline-block;*/
-    width: 33.3%;
-    float: left;
-    height: 50%;
-}
-
-/* Button */
-.cta-main {
-    color: #FFFFFF;
-    background-color: #1F0600;
-    font-size: 24px;
-    padding: 20px 30px;
-    border-radius: 5px;
-}
-
-.below-the-fold .cta-main {
-    display: block;
-    font-weight: 700;
-    margin: 40px auto; 
-}
-
-/* Footer */
-footer {
-    width: 100%;
-    height: 300px;
-    color: #FFFFFF;
-    font-weight: 500;
-    background-color: #1F0600;
-}
-
-/* 
-
-The code below is used to style navigation and buttons
-.share {
-  border: 1px solid LightGrey;
-  padding: 40px 0px;
-  position: relative;
-  text-align: center;
+.problem-column-3 {
+  display: grid;
   width: 100%;
+  height: 400px;
+  grid-template-columns: auto repeat(3, 1fr) auto;
+  grid-gap: 20px;
+  justify-items: center;
+  justify-content: center;
 }
 
-.share a {
-  background: red;
-  border: 1px solid red;
-  border-radius: 3px;
-  color: white;
-  display: inline-block;
-  margin: 10px;
-  padding: 14px;
-  text-decoration: none;
+.problem-column-3 .a {
+  grid-column: 2/ span 1;
+  border: 1px solid #4a4a4a;
+  padding: 10px;
 }
 
-.share a:hover {
-  background: white;
-  border: 1px solid red;
-  color: red;
+.problem-column-3 .b {
+  grid-column: 3 / span 1;
+  border: 1px solid #4a4a4a;
+  padding: 10px;
 }
 
-*/
-* {box-sizing: border-box}
-/* Full-width input fields */
-  input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity:1;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 200; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
-  padding-top: 50px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* Style the horizontal ruler */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
+.problem-column-3 .c {
+  grid-column: 4 / span 1;
+  border: 1px solid #4a4a4a;
+  padding: 10px;
 }

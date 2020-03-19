@@ -69,7 +69,7 @@ router.post('/login', async (req, res, next) => {
     const user = await User.findOne({ email: req.body.email })
     if(!user) {
         return res.status(400).send('This email is not registered. Please signup')
-    
+    }
     //Check password is correct
     const validPass = await bcrypt.compare(req.body.password, user.password)
     if(!validPass) {
@@ -80,6 +80,8 @@ router.post('/login', async (req, res, next) => {
     res.header('auth-token', token)
 
     return res.send(`Welcome ${user.first_name} ${user.last_name[0]}.`)
-});
+    }
+
+);
 
 module.exports = router
